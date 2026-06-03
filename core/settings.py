@@ -9,7 +9,7 @@ def get_secret(key: str, default=None):
         return os.getenv(key, default)
 
 
-APP_TITLE = get_secret("APP_TITLE", "AI Metadata + Knowledge Graph Platform")
+APP_TITLE = get_secret("APP_TITLE", "Metadata automation for AI-enabled digital heritage systems")
 OPENAI_API_KEY = get_secret("OPENAI_API_KEY", "")
 DEFAULT_EMBEDDING_MODEL = get_secret("DEFAULT_EMBEDDING_MODEL", "text-embedding-3-small")
 DEFAULT_LLM_MODEL = get_secret("DEFAULT_LLM_MODEL", "gpt-4.1-mini")
